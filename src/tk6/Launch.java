@@ -1,12 +1,18 @@
 package tk6;
 import net.toollib.*;
 class Soup1{
+	private static int sum=0;
 	private Soup1() {}
 	public static Soup1 makeSoup1() {
-		return new Soup1();
+		if(8>=sum) {
+			sum=sum+1;//use private sum to record Object Soup1's total,and limite Soup1 obj less than 9 
+			return new Soup1();
+		}
+		return null;//use null to return empaty object
 	}
 }
 class Soup2{
+	private static int sum;
 	private Soup2() {}
 	private static Soup2 ps1=new Soup2();
 	public static Soup2 makeSoup2() {
@@ -15,9 +21,12 @@ class Soup2{
 	public void f() {}
 }
 /**
- * 学习包访问权限的类中的private成员
- * public static成员的使用规则
- * 不同类的接口使用要使用类名引导
+ *show private,public,friendly,protected object(method)'s differ
+ * <p>
+ *point at public static method's usage. must use Object's name and "." to refer
+ * <p>
+ *different class's public obj must use class'name+"."to refer 
+ * <p>
  * @author plasma
  *
  */
