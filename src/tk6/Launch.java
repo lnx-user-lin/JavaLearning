@@ -27,7 +27,7 @@ class Soup2{
  * <p>
  *different class's public obj must use class'name+"."to refer 
  * <p>
- * @author plasma
+ * @author plasma 
  *
  */
 public class Launch {
