@@ -8,7 +8,7 @@ class Soup1{
 			sum=sum+1;//use private sum to record Object Soup1's total,and limite Soup1 obj less than 9 
 			return new Soup1();
 		}
-		return null;//use null to return empaty object
+		return null;//use null to return empaty object 
 	}
 }
 class Soup2{
