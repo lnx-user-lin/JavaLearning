@@ -2,7 +2,12 @@ package tokk03;
 
 import java.util.*;
 /**
+ * 注意区分数组的定义方式和初始化方式，不要混为一谈
+ * <p>
+ * 
+ * <p>
  * 多维数组的声明与初始化
+ * <p>
  * 注意数组的长度length，数组的下标从0开始到length-1.极其重要
  * @author dell
  *
@@ -62,8 +67,10 @@ public class MultiDimArrays {
 						);
 			}
 		}
-		Integer[][] a5;
-		a5=new Integer[3][];
+		//重点注意！！！！！！！
+		//Integer[4][] a5;/*这个是数组的定义（defin），定义时不可设置数组的大小（元素个数）*/
+		Integer[][] a5;/**/
+		a5=new Integer[3][];/*这个是初始化（）*/
 		for(int i=0;i<a5.length;i++) {
 			a5[i]=new Integer[3];
 			for(int j=0;j<a5[i].length;j++) {
