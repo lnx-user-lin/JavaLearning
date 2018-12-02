@@ -12,6 +12,9 @@ class Connection{
 		return total;
 	}
 }
+class UnSecuratyClass{
+	private int i=5;
+}
 /**
  * 重要
  * <p>
@@ -70,8 +73,13 @@ public class ConnectionMenager {
 		System.out.println(cMTotal);
 		getConnection();
 		getConnection();
+		UnSecuratyClass us=new UnSecuratyClass();
+		/*
+		 * 
+		 * 
+		 * */
 
-
+		System.out.println(us);
 		
 	}
 
