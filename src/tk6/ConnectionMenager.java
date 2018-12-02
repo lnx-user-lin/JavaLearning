@@ -38,6 +38,21 @@ public class ConnectionMenager {
 			x=Connection.makeConnection();
 			}
 	};
+	/*
+	static Connection[] c4= {
+			for(Connection s:c4) {
+				s=getConnection();
+			}
+	};
+	这个初始化形式不可使用
+	*/
+	static Connection[] c5= {
+			Connection.makeConnection(),
+			Connection.makeConnection(),
+			Connection.makeConnection()};
+	/*
+	 *对比C3和C5的初始化方式 
+	 * */
 	public static Connection getConnection() {
 		if(cMTotal>0) {
 			return c3[--cMTotal];
