@@ -9,6 +9,16 @@ package tk6;
  *@see tk6.NewVarArraysWithoutArgument
  */
 public class NewVarArrays {
+	private String nva;
+	public NewVarArrays() {
+		nva="this is an object";
+	}
+	/*
+	 * tostring 在需要返回string时 调用，查看LABEL行
+	 * */
+	public String toString() {
+		return nva;
+	}
 	static void printArrays(Object...args) {
 		for(Object obj:args) {
 			System.out.println(obj+" ");
@@ -25,7 +35,7 @@ public class NewVarArrays {
 		printArrays("one","two","three");
 		printArrays(new A(),new A(),new A());
 		printArrays(1,2,3,4);
-		printArrays();
+		printArrays(new NewVarArrays());//LABEL
 	}
 
 }
