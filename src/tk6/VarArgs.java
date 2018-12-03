@@ -4,10 +4,10 @@ class A{
 	
 }
 /**AAAA  可变参数列表的具体用法&&即使输入参数为空，任然可以运行<p>
- * old 旧版的 <p>
- * obj  对象列表形式参数<p>
- * use 使用new Object[] args作为形式参数<p>
- *   method 使用方法时：必须使用new Object[]｛ Object A,Object ｝<p>
+ * 旧版的 <p>
+ * 对象列表形式参数<p>
+ * 使用new Object[] args作为形式参数<p>
+ * 使用方法时：必须使用new Object[]｛ Object A,Object ｝<p>
  * for（Object obj：args）相当于FOREACH遍历所有对象<p>
  * @author dell
  *
