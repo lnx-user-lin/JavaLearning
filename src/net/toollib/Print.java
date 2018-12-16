@@ -1,4 +1,5 @@
 package net.toollib; 
+import java.io.*;
 /**
  * 简化输出的工具
  * @author dell
